@@ -1,0 +1,12 @@
+<div class="page-header">
+  <h1>Meeting <%= @meeting.course_id %></h1>
+</div>
+
+<dl class="dl-horizontal">
+  <dt>Held on:</dt>
+  <dd><%= @meeting.held_on %></dd>
+
+  <dt>Course:</dt>
+  <%c = Course.find(@meeting.course_id) %>
+  <dd><%= c.department%> <%=c.number%> <%=c.title%></dd>
+</dl>

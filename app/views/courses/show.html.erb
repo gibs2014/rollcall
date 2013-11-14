@@ -1,0 +1,24 @@
+<div class="page-header">
+  <h1>Course #<%= @course.id %></h1>
+</div>
+
+<p>
+  <b>Department:</b>
+  <%= @course.department %>
+</p>
+
+<p>
+  <b>Number:</b>
+  <%= @course.number %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @course.title %>
+</p>
+
+
+<p>
+
+    <%= Meeting.where(:course_id =>2).all.each do  %> </p>
+
